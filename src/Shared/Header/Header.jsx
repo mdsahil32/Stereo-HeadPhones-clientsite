@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
     const navOption = <>
-        <li><a className='hover:bg-red-600'>Home</a></li>
-        <li><a className='hover:bg-red-600'>blog</a></li>
+        <li><Link to={'/'}><p className='hover:bg-red-600 p-2 rounded'>Home</p></Link></li>
+        <li><Link to={'/blog'}>
+            <p className='hover:bg-red-600 p-2 rounded'>blog</p></Link></li>
     </>
 
     return (
-        <div className="navbar fixed z-10 bg-black ">
+        <div className="navbar fixed z-10 bg-black border-x-8 border-red-600">
             <div className="navbar-end z-10">
                 <div className="dropdown mx-2">
                     <label tabIndex={0} className="btn lg:hidden">

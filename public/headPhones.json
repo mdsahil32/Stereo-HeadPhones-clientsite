@@ -1,0 +1,72 @@
+[
+    {
+        "brand": "Sony",
+        "model": "WH-1000XM4",
+        "color": "Black",
+        "wireless": true,
+        "bluetooth_version": "5.0",
+        "battery_life": "Up to 30 hours",
+        "noise_cancellation": true,
+        "price": 299.99,
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/2097-43505.jpg",
+        "id":1
+      },
+      {
+        "brand": "Bose",
+        "model": "QuietComfort 35 II",
+        "color": "Silver",
+        "wireless": true,
+        "bluetooth_version": "4.2",
+        "battery_life": "Up to 20 hours",
+        "noise_cancellation": true,
+        "price": 249.00,
+        "image": "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc35_ii/product_silo_images/qc35_ii_black_EC_hero.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+        "id":2
+      },      
+      {
+        "brand": "Jabra",
+        "model": "Elite 85h",
+        "color": "Navy",
+        "wireless": true,
+        "bluetooth_version": "5.1",
+        "battery_life": "Up to 36 hours",
+        "noise_cancellation": true,
+        "price": 219.99,
+        "image": "https://m.media-amazon.com/images/I/81C6mZcbyuL._AC_SL1500_.jpg",
+        "id":3
+      },
+      {
+        "brand": "Audio-Technica",
+        "model": "ATH-M50x",
+        "color": "Black",
+        "wireless": false,
+        "cable_length": "3 meters",
+        "noise_isolation": true,
+        "price": 149.00,
+        "image": "https://www.audio-technica.com/en-eu/media/catalog/product/cache/8dd197211b5cade13ef7fc9815610330/a/t/ath-m50xds_01_1.png",
+        "id":4
+      },
+      {
+        "brand": "Sennheiser",
+        "model": "HD 660 S",
+        "color": "Matte Black",
+        "wireless": false,
+        "cable_length": "1.5 meters",
+        "open_back": true,
+        "price": 399.95,
+        "image": "https://www.headphonezone.in/cdn/shop/products/Headphone-Zone-Sennheiser-HD-660-S-1160-1160-1.jpg?v=1593681942&width=600",
+        "id":5
+      },
+      {
+        "brand": "Beats",
+        "model": "Studio3 Wireless",
+        "color": "Red",
+        "wireless": true,
+        "bluetooth_version": "5.0",
+        "battery_life": "Up to 22 hours",
+        "noise_cancellation": true,
+        "price": 349.99,
+        "image": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studio3-wireless/global/ecom/color-selector/studio3-core-matteblack.png.large.2x.png",
+        "id":6
+      }      
+]
