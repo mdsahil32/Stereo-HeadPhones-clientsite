@@ -12,7 +12,6 @@ import './banner.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import banner from '../../../assets/image/banner.jpg'
 import banner1 from '../../../assets/image/banner1.jpg'
 import banner2 from '../../../assets/image/banner2.jpg'
 import banner3 from '../../../assets/image/banner3.jpg'
@@ -44,11 +43,10 @@ const Banner = () => {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
-                <SwiperSlide><img className='w-20 h-20' src={banner1} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='object-cover ' src={banner4} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='object-cover ' src={banner} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='object-cover ' src={banner2} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='object-cover ' src={banner3} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='' src={banner1} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='' src={banner4} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='' src={banner2} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='' src={banner3} alt="" /></SwiperSlide>
 
                 <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>

@@ -19,7 +19,6 @@ import Blog from "../Pages/Blog/Blog";
                 element: <Blog></Blog>
             }
         ]
-        
     }
   ])
   export default router;

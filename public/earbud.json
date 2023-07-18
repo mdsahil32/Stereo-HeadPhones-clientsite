@@ -1,0 +1,68 @@
+[
+      {
+        "id": 1,
+        "brand": "Sony",
+        "model": "WF-1000XM4",
+        "color": "Black",
+        "wireless": true,
+        "battery_life": "8 hours",
+        "water_resistant": true,
+        "price": "$199.99",
+        "img": "https://www.startech.com.bd/image/cache/catalog/earphone/sony/wf-1000xm4/sony-wf-1000xm4-wireless-headphones-01-500x500.jpg"
+      },
+      {
+        "id": 2,
+        "brand": "Apple",
+        "model": "AirPods Pro",
+        "color": "White",
+        "wireless": true,
+        "battery_life": "4.5 hours",
+        "water_resistant": true,
+        "price": "$249.00",
+        "img": "https://m.media-amazon.com/images/I/71SJDhJtEVL._AC_SX466_.jpg"
+      },
+      {
+        "id": 3,
+        "brand": "Jabra",
+        "model": "Elite 75t",
+        "color": "Titanium Black",
+        "wireless": true,
+        "battery_life": "7.5 hours",
+        "water_resistant": true,
+        "price": "$179.99",
+        "img": "https://www.startech.com.bd/image/cache/catalog/earphone/jabra/75t/75t-01-500x500.jpg"
+      },
+      {
+        "id": 4,
+        "brand": "Samsung",
+        "model": "Galaxy Buds Pro",
+        "color": "Phantom Black",
+        "wireless": true,
+        "battery_life": "5 hours",
+        "water_resistant": true,
+        "price": "$189.99",
+        "img": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/Earphone/Samsung/Buds%20Pro/Buds-Pro-1-800x800.png"
+      },
+      {
+        "id": 5,
+        "brand": "Bose",
+        "model": "QuietComfort Earbuds",
+        "color": "Triple Black",
+        "wireless": true,
+        "battery_life": "6 hours",
+        "water_resistant": true,
+        "price": "$279.00",
+        "img": "https://assets.bosecreative.com/transform/7c189873-feaf-4bf5-9c2d-54f12fceeea7/EB500_TripleBlack_006_RGB?io=width:816,height:667,transform:fit&io=width:816,height:667,transform:fit"
+      },
+      {
+        "id": 6,
+        "brand": "Anker",
+        "model": "Soundcore Liberty Air 2 Pro",
+        "color": "Onyx Black",
+        "wireless": true,
+        "battery_life": "7 hours",
+        "water_resistant": false,
+        "price": "$129.99",
+        "img": "https://adminapi.applegadgetsbd.com/storage/media/large/2506-26148.jpg"
+      }
+    ]
