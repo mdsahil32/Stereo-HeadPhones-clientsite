@@ -12,9 +12,6 @@ const Home = () => {
             <HeadPhones></HeadPhones>
             <AirPod></AirPod>
             <Client></Client>
-            categroy ----
-            section 1 
-            seciton 2
         </div>
     );
 };

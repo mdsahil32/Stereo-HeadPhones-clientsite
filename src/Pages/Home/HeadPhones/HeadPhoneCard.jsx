@@ -12,7 +12,7 @@ const HeadPhoneCard = ({ headPhone }) => {
                 <p>Price: {price}</p>
                 </div>
                 <div className="card-actions justify-center">
-                    <button className="btn bg-black text-red-600">View Detail</button>
+                    <button className="btn bg-black my-2 text-red-600">See Detail</button>
                 </div>
             </div>
         </div>
