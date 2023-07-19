@@ -6,7 +6,7 @@ const AirpodCard = ({ airpod }) => {
     
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src={img} alt="AirPod" /></figure>
+            <figure><img className='h-80' src={img} alt="AirPod" /></figure>
             <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>

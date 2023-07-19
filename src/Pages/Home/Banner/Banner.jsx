@@ -1,60 +1,59 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './banner.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import React from "react"
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 import banner1 from '../../../assets/image/banner1.jpg'
 import banner2 from '../../../assets/image/banner2.jpg'
 import banner3 from '../../../assets/image/banner3.jpg'
 import banner4 from '../../../assets/image/banner4.jpg'
+import { Carousel } from 'react-responsive-carousel';
 
 const Banner = () => {
 
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    };
+    const [sliderRef] = useKeenSlider(
+        {
+            loop: true,
+        },
+        [
+            (slider) => {
+                let timeout
+                let mouseOver = false
+                function clearNextTimeout() {
+                    clearTimeout(timeout)
+                }
+                function nextTimeout() {
+                    clearTimeout(timeout)
+                    if (mouseOver) return
+                    timeout = setTimeout(() => {
+                        slider.next()
+                    }, 2000)
+                }
+                slider.on("created", () => {
+                    slider.container.addEventListener("mouseover", () => {
+                        mouseOver = true
+                        clearNextTimeout()
+                    })
+                    slider.container.addEventListener("mouseout", () => {
+                        mouseOver = false
+                        nextTimeout()
+                    })
+                    nextTimeout()
+                })
+                slider.on("dragStarted", clearNextTimeout)
+                slider.on("animationEnded", nextTimeout)
+                slider.on("updated", nextTimeout)
+            },
+        ]
+    )
 
     return (
         <>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
-                className="mySwiper"
-            >
-                <SwiperSlide><img className='' src={banner1} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='' src={banner4} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='' src={banner2} alt="" /></SwiperSlide>
-                <SwiperSlide><img className='' src={banner3} alt="" /></SwiperSlide>
-
-                <div className="autoplay-progress" slot="container-end">
-                    <svg viewBox="0 0 48 48" ref={progressCircle}>
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span ref={progressContent}></span>
-                </div>
-            </Swiper>
+            <div ref={sliderRef} className="keen-slider">
+                <div className="keen-slider__slide number-slide1"><img src={banner1} alt="" /></div>
+                <div className="keen-slider__slide number-slide2"><img src={banner4} alt="" /></div>
+                <div className="keen-slider__slide number-slide3"><img src={banner2} alt="" /></div>
+                <div className="keen-slider__slide number-slide4"><img src={banner3} alt="" /></div>
+            </div>
         </>
     );
 };

@@ -1,8 +1,8 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
 import HeadPhones from '../HeadPhones/HeadPhones';
 import Client from '../Client/Client';
 import AirPod from '../Airpods/Airpods';
+import Banner from '../Banner/Banner';
 
 
 const Home = () => {
