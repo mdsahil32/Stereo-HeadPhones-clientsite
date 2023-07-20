@@ -4,6 +4,7 @@ import {
 import MainLayout from "../MainLayOut/MainLayout";
 import Home from "../Pages/Home/Home/Home";
 import Blog from "../Pages/Blog/Blog";
+import HeadphoneDetail from "../Pages/HeadphoneDetail/HeadphoneDetail";
 
   const router = createBrowserRouter([
     {
@@ -17,6 +18,11 @@ import Blog from "../Pages/Blog/Blog";
             {
                 path: 'blog',
                 element: <Blog></Blog>
+            },
+            {
+              path: 'headphone/:id',
+              element: <HeadphoneDetail></HeadphoneDetail>,
+              loader: ({params}) => fetch(`http://localhost:5000/headphones/${params.id}`)
             }
         ]
     }

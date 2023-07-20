@@ -5,7 +5,7 @@ const HeadPhones = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('headPhones.json')
+        fetch('http://localhost:5000/headphones')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
