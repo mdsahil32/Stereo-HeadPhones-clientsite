@@ -7,8 +7,8 @@ const HeadphoneDetail = () => {
     console.log(data);
     const { brand, model, color, wireless, bluetooth_version, battery_life, noise_cancellation, price, image, id } = data
     return (
-        <div className='py-16 flex'>
-            <div className="app">
+        <div className=' '>
+            <div className="app items-center justify-center">
                 <div className="img-container">
                     <img
                         src={image}
@@ -16,7 +16,7 @@ const HeadphoneDetail = () => {
                     />
                 </div>
             </div>
-            <div className='py-16'>
+            <div className=''>
                 <h3 className='text-3xl'>Brand: {brand}</h3>
                 <h5 className='text-xl'>Model: {model}</h5>
             </div>

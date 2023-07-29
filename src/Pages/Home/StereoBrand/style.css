@@ -1,0 +1,14 @@
+.app {
+    display: grid;
+    height: 100vh;
+  }
+  
+  
+  .img-container img {
+    width: 400px;
+    transition: transform 0.5s;
+  }
+  
+  .img-container img:hover {
+    transform: scale(1.5);
+  }
