@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './header.css'
 
 const Header = () => {
 
     const navOption = <>
-        <li><Link to={'/'}><p className='hover:bg-red-600 p-2 rounded'>Home</p></Link></li>
+        <li><Link to={'/'}><p className='hover:bg-red-600 rounded'>Home</p></Link></li>
         <li><Link to={'/blog'}>
-            <p className='hover:bg-red-600 p-2 rounded'>blog</p></Link></li>
+            <p className='hover:bg-red-600 rounded'>blog</p></Link></li>
     </>
 
     return (
@@ -20,9 +21,14 @@ const Header = () => {
                         {navOption}
                     </ul>
                 </div>
-                <div className='md:mx-auto bg-black md:text-center'>
-                    <h2 className='text-red-600 text-xl md:text-3xl py-3 uppercase  font-bold md:text-center'>Stereo HeadPhones</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3 class="animate-charcter font-semibold">Stereo HeadPhones</h3>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
             <div className="navbar-end  hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-red-600  ">

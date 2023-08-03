@@ -23,9 +23,15 @@ import img8 from '../../../assets/client/young-pretty-woman-sitting-with-laptop-
 
 const Client = () => {
     return (
-        <>
+        <div className='my-12'>
             <div className='bg-black border-x-8 border-red-600 mt-44'>
-                <h3 className='text-4xl text-red-600 py-6 font-semibold  text-center'>Happy Client's</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center py-6">
+                            <h3 class="animate-charcter font-semibold text-center">Happy Client's</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Swiper
                 effect={'coverflow'}
@@ -44,7 +50,7 @@ const Client = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src={img1} />
+                    <img  src={img1} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={img2} />
@@ -68,7 +74,7 @@ const Client = () => {
                     <img src={img8} />
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 };
 
