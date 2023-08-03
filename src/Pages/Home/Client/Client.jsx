@@ -25,10 +25,10 @@ const Client = () => {
     return (
         <div className='my-12'>
             <div className='bg-black border-x-8 border-red-600 mt-44'>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center py-6">
-                            <h3 class="animate-charcter font-semibold text-center">Happy Client's</h3>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 text-center py-6">
+                            <h3 className="animate-charcter font-semibold text-center">Happy Client's</h3>
                         </div>
                     </div>
                 </div>
