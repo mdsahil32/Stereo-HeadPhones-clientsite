@@ -5,7 +5,7 @@ const AirPod = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('earbud.json')
+        fetch('http://localhost:5000/airpods')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

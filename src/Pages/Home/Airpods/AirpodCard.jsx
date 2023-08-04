@@ -13,8 +13,12 @@ const AirpodCard = ({ airpod }) => {
                     <p className='text-xl'>Brand: {brand}</p>
                     <h3 className='text-xl'>Price: ${price}</h3>
                 </div>
+                <div className='flex'>
+                    <p className='text-xl'>Color: {color}</p>
+                    <p className='text-xl'>Battery: {battery_life}</p>
+                </div>
                 <div className="card-actions justify-center mt-2">
-                <button className="btn bg-black text-red-600">See Detail</button>
+                    <button className="btn bg-black text-red-600">Add To Cart</button>
                 </div>
             </div>
         </div>
