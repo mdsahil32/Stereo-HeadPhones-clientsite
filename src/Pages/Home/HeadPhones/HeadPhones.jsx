@@ -5,7 +5,7 @@ const HeadPhones = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/headphones')
+        fetch('https://stereo-headphones-serversite.vercel.app/headphones')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

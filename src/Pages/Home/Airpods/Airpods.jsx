@@ -5,7 +5,7 @@ const AirPod = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/airpods')
+        fetch('https://stereo-headphones-serversite.vercel.app/airpods')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

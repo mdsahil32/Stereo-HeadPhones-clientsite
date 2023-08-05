@@ -22,7 +22,7 @@ import HeadphoneDetail from "../Pages/HeadphoneDetail/HeadphoneDetail";
             {
               path: 'headphone/:id',
               element: <HeadphoneDetail></HeadphoneDetail>,
-              loader: ({params}) => fetch(`http://localhost:5000/headphones/${params.id}`)
+              loader: ({params}) => fetch(`https://stereo-headphones-serversite.vercel.app/headphones/${params.id}`)
             }
         ]
     }
